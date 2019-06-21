@@ -35,6 +35,7 @@ module StripeMock
     include StripeMock::RequestHandlers::Invoices
     include StripeMock::RequestHandlers::InvoiceItems
     include StripeMock::RequestHandlers::Orders
+    include StripeMock::RequestHandlers::PaymentMethods
     include StripeMock::RequestHandlers::Plans
     include StripeMock::RequestHandlers::Products
     include StripeMock::RequestHandlers::Refunds
