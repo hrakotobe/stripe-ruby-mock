@@ -1120,7 +1120,21 @@ module StripeMock
                       payment_intent: payment_intent_id,
                       payment_method: nil,
                       amount_refunded: 0,
-                      balance_transaction: "txn_2dyYXXP90MN26R"
+                      balance_transaction: "txn_2dyYXXP90MN26R",
+                      payment_method_details: {
+                        card: {
+                          brand: "visa",
+                          checks: { address_line1_check: nil, address_postal_code_check: nil, cvc_check: "pass" },
+                          country: "FR",
+                          exp_month: 2,
+                          exp_year: 2022,
+                          fingerprint: "Hr3Ly5z5IYxsokWA",
+                          funding: "credit",
+                          last4: "3155",
+                          three_d_secure_usage: { supported: true }
+                      },
+            
+                      }
                   }
               ],
               has_more: false,
